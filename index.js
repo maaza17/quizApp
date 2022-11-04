@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 require("dotenv").config();
 
 const userRoute = require('./routes/user.route')
+const quizRoute = require('./routes/quiz.route')
 
 const app = express();
 
@@ -38,6 +39,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/users', userRoute)
+app.use('/api/quiz', quizRoute)
 
 mongoose
     .connect(
