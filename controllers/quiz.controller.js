@@ -1,11 +1,10 @@
 const quizModel = require('../models/quiz.model')
-const quizHelper = require('../helpers/quiz.helper')
+const miscHelper = require('../helpers/misc.helper')
 const jwt = require('jsonwebtoken')
-const { default: mongoose } = require('mongoose')
 const isEmpty = require('is-empty')
 
 function createQuiz(req, res) {
-    quizHelper.verifyToken(req.body.token, (err, decoded) => {
+    miscHelper.verifyToken(req.body.token, (err, decoded) => {
         if(err) return res.status(400).json(err)
         else {
             if(!req.body.quiz || isEmpty(req.body.quiz)) return res.status(400).json({QuizCanNotBeEmptyError: 'Quiz can not be empty.'})
@@ -59,8 +58,25 @@ function listQuizzesByTopic(req, res){
     }
 }
 
+function getOneQuiz(req, res){
+    if(!req.body.quizID) return res.status(400).json({InvalidQuixError: "Quiz unique id is missing."})
+    else {
+        quizModel.findOne({_id: req.body.quizID}, {answerSet: false})
+        .then(doc => {
+            if(!doc) return res.status(404).json({QuizNotFoundError: "Quiz not found."})
+            else {
+                return res.status(200).json(doc)
+            }
+        })
+        .catch(err => {
+            return res.status(500).json({UnexpectedError: "An unexpected error occured. Please try again later."})
+        })
+    }
+}
+
 module.exports = {
     createQuiz: createQuiz,
     listAllQuizzes: listAllQuizzes,
-    listQuizzesByTopic: listQuizzesByTopic
+    listQuizzesByTopic: listQuizzesByTopic,
+    getOneQuiz: getOneQuiz
 }

@@ -25,7 +25,8 @@ const quizSchema = new mongoose.Schema({
         type: [{
             qType: {type: String, enum: ['blank', 'mcq']},
             question: String,
-            choices: [String]
+            choices: [String],
+            _id: false
         }],
         required: true,
         default: []

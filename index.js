@@ -4,6 +4,7 @@ require("dotenv").config();
 
 const userRoute = require('./routes/user.route')
 const quizRoute = require('./routes/quiz.route')
+const attemptRoute = require('./routes/attempt.route')
 
 const app = express();
 
@@ -40,6 +41,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/users', userRoute)
 app.use('/api/quiz', quizRoute)
+app.use('/api/attempt', attemptRoute)
 
 mongoose
     .connect(
