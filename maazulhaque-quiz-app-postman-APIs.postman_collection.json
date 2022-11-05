@@ -1,0 +1,1643 @@
+{
+	"info": {
+		"_postman_id": "3924f59f-a9f7-466a-9e80-4c8505972ccf",
+		"name": "maazulhaque-quiz-app-postman-APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18378214"
+	},
+	"item": [
+		{
+			"name": "1) get /",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/",
+					"protocol": "https",
+					"host": [
+						"maazulhaque-metaschool-quiz-app",
+						"vercel",
+						"app"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "1) get /",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/",
+							"protocol": "https",
+							"host": [
+								"maazulhaque-metaschool-quiz-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Age",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "133"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Nov 2022 20:29:33 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"85-FSEvuy8j/zTQ7C6aOZtNLGryOlE\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::7lbhj-1667680173919-6ebe3d5711b8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"author\": \"Maaz Ul Haque\",\n    \"message\": \"This is a demo application for metaschool.so\",\n    \"repository\": \"https://github.com/maaza17/quizApp\"\n}"
+				}
+			]
+		},
+		{
+			"name": "2) register new user - you will need to verify email; follow the link recieved",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"maaz.haque17@gmail.com\",\r\n    \"password\":\"1234567890\",\r\n    \"name\":\"Maaz Ul Haque\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/users/register",
+					"protocol": "https",
+					"host": [
+						"maazulhaque-metaschool-quiz-app",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "2) register new user - you will need to verify email; follow the link recieved",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"maaz.haque17@gmail.com\",\r\n    \"password\":\"1234567890\",\r\n    \"name\":\"Maaz Ul Haque\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/users/register",
+							"protocol": "https",
+							"host": [
+								"maazulhaque-metaschool-quiz-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Nov 2022 20:30:10 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"2b-HysgJ/5vjhV0UttQdVY7wQ4LK5s\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::b97x4-1667680210255-819a988668af"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User registered successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "3) verify email by following the recieved link - endpoint includes unique confirmation code as parameter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/users/verifyEmail/VkaZCQo28exRbowqLK4OREOmR",
+					"protocol": "https",
+					"host": [
+						"maazulhaque-metaschool-quiz-app",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"users",
+						"verifyEmail",
+						"VkaZCQo28exRbowqLK4OREOmR"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "3) verify email by following the recieved link - endpoint includes unique confirmation code as parameter",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/users/verifyEmail/VkaZCQo28exRbowqLK4OREOmR",
+							"protocol": "https",
+							"host": [
+								"maazulhaque-metaschool-quiz-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"users",
+								"verifyEmail",
+								"VkaZCQo28exRbowqLK4OREOmR"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Age",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "72"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Nov 2022 20:31:17 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"48-2jlXgWtgNAGeQeySDXtl/z/0Fo8\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::km5rp-1667680277033-97e9f0ee91ec"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"VerificationSuccessful\": \"Specified user email verified successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "4) login user with respective credentials - response will include jsonwebtoken to be used with other API calls - unverified users will not be able to log in and further interact with APIs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"maaz.haque17@gmail.com\",\r\n    \"password\":\"1234567890\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/users/login",
+					"protocol": "https",
+					"host": [
+						"maazulhaque-metaschool-quiz-app",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "4) login user with respective credentials - response will include jsonwebtoken to be used with other API calls - unverified users will not be able to log in and further interact with APIs",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"maaz.haque17@gmail.com\",\r\n    \"password\":\"1234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/users/login",
+							"protocol": "https",
+							"host": [
+								"maazulhaque-metaschool-quiz-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "316"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Nov 2022 20:31:43 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"13c-kkbrPJes0dqXjNYzWVjiK5R6X10\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::xggzb-1667680303550-69cfc331f61b"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Login successfull.\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzY2YzdkMjUyMDYyNGM1MWY2YzQ2NzAiLCJuYW1lIjoiTWFheiBVbCBIYXF1ZSIsImVtYWlsIjoibWFhei5oYXF1ZTE3QGdtYWlsLmNvbSIsInN0YXR1cyI6InZlcmlmaWVkIiwiaWF0IjoxNjY3NjgwMzAzLCJleHAiOjE2Njc4NTMxMDN9.WNJvBhBNalCor75zbjdi_Ee3aOHLsjLszy5qOE1Hdmw\"\n}"
+				}
+			]
+		},
+		{
+			"name": "5) create a quiz to be published to the platform - all registered users will get an email alert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzY2YzdkMjUyMDYyNGM1MWY2YzQ2NzAiLCJuYW1lIjoiTWFheiBVbCBIYXF1ZSIsImVtYWlsIjoibWFhei5oYXF1ZTE3QGdtYWlsLmNvbSIsInN0YXR1cyI6InZlcmlmaWVkIiwiaWF0IjoxNjY3NjgwMzAzLCJleHAiOjE2Njc4NTMxMDN9.WNJvBhBNalCor75zbjdi_Ee3aOHLsjLszy5qOE1Hdmw\",\r\n    \"quiz\":{\r\n        \"quizName\":\"Sample Quiz 2\",\r\n        \"quizTopic\":\"Sample Topic 2\",\r\n        \"thumbnail\":\"https://e7.pngegg.com/pngimages/860/634/png-clipart-general-knowledge-test-zazzle-gift-pink-sheep-light-brain-thumbnail.png\",\r\n        \"questionSet\":[\r\n            {\r\n                \"qType\":\"mcq\",\r\n                \"question\":\"What does 5 + 5 equals to?\",\r\n                \"choices\":[\"10\", \"20\", \"5\", \"55\"]\r\n            },\r\n            {\r\n                \"qType\":\"mcq\",\r\n                \"question\":\"What is the opposite of \\\"YES\\\"?\",\r\n                \"choices\":[\"MAYBE\", \"PERHAPS\", \"NO\", \"DEFINITE\"]\r\n            },\r\n            {\r\n                \"qType\":\"blank\",\r\n                \"question\":\"______ is the largest state in the USA.\",\r\n                \"choices\":[]\r\n            }\r\n        ],\r\n        \"answerSet\":[\r\n            {\r\n                \"answer\":\"10\"\r\n            },\r\n            {\r\n                \"answer\":\"NO\"\r\n            },\r\n            {\r\n                \"answer\":\"Alaska\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/quiz/createQuiz",
+					"protocol": "https",
+					"host": [
+						"maazulhaque-metaschool-quiz-app",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"quiz",
+						"createQuiz"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "5) create a quiz to be published to the platform - all registered users will get an email alert",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzY2YzdkMjUyMDYyNGM1MWY2YzQ2NzAiLCJuYW1lIjoiTWFheiBVbCBIYXF1ZSIsImVtYWlsIjoibWFhei5oYXF1ZTE3QGdtYWlsLmNvbSIsInN0YXR1cyI6InZlcmlmaWVkIiwiaWF0IjoxNjY3NjgwMzAzLCJleHAiOjE2Njc4NTMxMDN9.WNJvBhBNalCor75zbjdi_Ee3aOHLsjLszy5qOE1Hdmw\",\r\n    \"quiz\":{\r\n        \"quizName\":\"Sample Quiz\",\r\n        \"quizTopic\":\"Sample Topic\",\r\n        \"thumbnail\":\"https://e7.pngegg.com/pngimages/860/634/png-clipart-general-knowledge-test-zazzle-gift-pink-sheep-light-brain-thumbnail.png\",\r\n        \"questionSet\":[\r\n            {\r\n                \"qType\":\"mcq\",\r\n                \"question\":\"What does 5 + 5 equals to?\",\r\n                \"choices\":[\"10\", \"20\", \"5\", \"55\"]\r\n            },\r\n            {\r\n                \"qType\":\"mcq\",\r\n                \"question\":\"What is the opposite of \\\"YES\\\"?\",\r\n                \"choices\":[\"MAYBE\", \"PERHAPS\", \"NO\", \"DEFINITE\"]\r\n            },\r\n            {\r\n                \"qType\":\"blank\",\r\n                \"question\":\"______ is the largest state in the USA.\",\r\n                \"choices\":[]\r\n            }\r\n        ],\r\n        \"answerSet\":[\r\n            {\r\n                \"answer\":\"10\"\r\n            },\r\n            {\r\n                \"answer\":\"NO\"\r\n            },\r\n            {\r\n                \"answer\":\"Alaska\"\r\n            }\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/quiz/createQuiz",
+							"protocol": "https",
+							"host": [
+								"maazulhaque-metaschool-quiz-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"quiz",
+								"createQuiz"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Nov 2022 20:32:52 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"28-R+k3yQ2NNsCzDrkR3U51i00OfUA\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::6qgfn-1667680372214-25080f05d08a"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Quiz created successfully.\"\n}"
+				},
+				{
+					"name": "5) create a quiz to be published to the platform - all registered users will get an email alert",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzY2YzdkMjUyMDYyNGM1MWY2YzQ2NzAiLCJuYW1lIjoiTWFheiBVbCBIYXF1ZSIsImVtYWlsIjoibWFhei5oYXF1ZTE3QGdtYWlsLmNvbSIsInN0YXR1cyI6InZlcmlmaWVkIiwiaWF0IjoxNjY3NjgwMzAzLCJleHAiOjE2Njc4NTMxMDN9.WNJvBhBNalCor75zbjdi_Ee3aOHLsjLszy5qOE1Hdmw\",\r\n    \"quiz\":{\r\n        \"quizName\":\"Sample Quiz 2\",\r\n        \"quizTopic\":\"Sample Topic 2\",\r\n        \"thumbnail\":\"https://e7.pngegg.com/pngimages/860/634/png-clipart-general-knowledge-test-zazzle-gift-pink-sheep-light-brain-thumbnail.png\",\r\n        \"questionSet\":[\r\n            {\r\n                \"qType\":\"mcq\",\r\n                \"question\":\"What does 5 + 5 equals to?\",\r\n                \"choices\":[\"10\", \"20\", \"5\", \"55\"]\r\n            },\r\n            {\r\n                \"qType\":\"mcq\",\r\n                \"question\":\"What is the opposite of \\\"YES\\\"?\",\r\n                \"choices\":[\"MAYBE\", \"PERHAPS\", \"NO\", \"DEFINITE\"]\r\n            },\r\n            {\r\n                \"qType\":\"blank\",\r\n                \"question\":\"______ is the largest state in the USA.\",\r\n                \"choices\":[]\r\n            }\r\n        ],\r\n        \"answerSet\":[\r\n            {\r\n                \"answer\":\"10\"\r\n            },\r\n            {\r\n                \"answer\":\"NO\"\r\n            },\r\n            {\r\n                \"answer\":\"Alaska\"\r\n            }\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/quiz/createQuiz",
+							"protocol": "https",
+							"host": [
+								"maazulhaque-metaschool-quiz-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"quiz",
+								"createQuiz"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Nov 2022 20:45:51 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"28-R+k3yQ2NNsCzDrkR3U51i00OfUA\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::rlcf7-1667681150427-1ea3bd6e0e57"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Quiz created successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "6) (a) list all available quizzes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/quiz/listAllQuizzes",
+					"protocol": "https",
+					"host": [
+						"maazulhaque-metaschool-quiz-app",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"quiz",
+						"listAllQuizzes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "6) (a) list all available quizzes",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/quiz/listAllQuizzes",
+							"protocol": "https",
+							"host": [
+								"maazulhaque-metaschool-quiz-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"quiz",
+								"listAllQuizzes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Age",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "322"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Nov 2022 20:41:09 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"142-LuV3SWWPZoJnRkq3XVhYsPnx5/U\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::vvpr2-1667680868023-6d3cf87f4d80"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6366c874520624c51f6c4675\",\n        \"authorEmail\": \"maaz.haque17@gmail.com\",\n        \"quizName\": \"Sample Quiz\",\n        \"thumbnail\": \"https://e7.pngegg.com/pngimages/860/634/png-clipart-general-knowledge-test-zazzle-gift-pink-sheep-light-brain-thumbnail.png\",\n        \"quizTopic\": \"Sample Topic\",\n        \"numProblems\": 3,\n        \"dateCreated\": \"2022-11-05T20:26:55.642Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "6) (b) list all available quizzes by topic - empty string in topicFilter array means get all topics - add multiple strings for multiple topics",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"topicFilter\":[\"\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/quiz/listQuizzesByTopic",
+					"protocol": "https",
+					"host": [
+						"maazulhaque-metaschool-quiz-app",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"quiz",
+						"listQuizzesByTopic"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "6) (b) list all available quizzes by topic - empty string in topicFilter array means get all topics - add multiple strings for multiple topics",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"topicFilter\":[\"\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/quiz/listQuizzesByTopic",
+							"protocol": "https",
+							"host": [
+								"maazulhaque-metaschool-quiz-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"quiz",
+								"listQuizzesByTopic"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "647"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Nov 2022 20:47:49 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"287-JejgGsNgaIU7u9OTrEx179fmT0o\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::g9g9q-1667681269459-d3bc50ac8967"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6366c874520624c51f6c4675\",\n        \"authorEmail\": \"maaz.haque17@gmail.com\",\n        \"quizName\": \"Sample Quiz\",\n        \"thumbnail\": \"https://e7.pngegg.com/pngimages/860/634/png-clipart-general-knowledge-test-zazzle-gift-pink-sheep-light-brain-thumbnail.png\",\n        \"quizTopic\": \"Sample Topic\",\n        \"numProblems\": 3,\n        \"dateCreated\": \"2022-11-05T20:26:55.642Z\"\n    },\n    {\n        \"_id\": \"6366cb7ebc40db86bd5ce3c6\",\n        \"authorEmail\": \"maaz.haque17@gmail.com\",\n        \"quizName\": \"Sample Quiz 2\",\n        \"thumbnail\": \"https://e7.pngegg.com/pngimages/860/634/png-clipart-general-knowledge-test-zazzle-gift-pink-sheep-light-brain-thumbnail.png\",\n        \"quizTopic\": \"Sample Topic 2\",\n        \"numProblems\": 3,\n        \"dateCreated\": \"2022-11-05T20:39:40.767Z\"\n    }\n]"
+				},
+				{
+					"name": "6) (b) list all available quizzes by topic - empty string in topicFilter array means get all topics - add multiple strings for multiple topics",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"topicFilter\":[\"Sample Topic 2\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/quiz/listQuizzesByTopic",
+							"protocol": "https",
+							"host": [
+								"maazulhaque-metaschool-quiz-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"quiz",
+								"listQuizzesByTopic"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "326"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Nov 2022 20:47:09 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"146-CB13+pAZLfR/E0dLjZrykVnB7CQ\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::qscs7-1667681229459-ed28453f39e6"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6366cb7ebc40db86bd5ce3c6\",\n        \"authorEmail\": \"maaz.haque17@gmail.com\",\n        \"quizName\": \"Sample Quiz 2\",\n        \"thumbnail\": \"https://e7.pngegg.com/pngimages/860/634/png-clipart-general-knowledge-test-zazzle-gift-pink-sheep-light-brain-thumbnail.png\",\n        \"quizTopic\": \"Sample Topic 2\",\n        \"numProblems\": 3,\n        \"dateCreated\": \"2022-11-05T20:39:40.767Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "7) get any quiz (by _id) to view the questions to consequently submit solution",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quizID\":\"6366c874520624c51f6c4675\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/quiz/getOneQuiz",
+					"protocol": "https",
+					"host": [
+						"maazulhaque-metaschool-quiz-app",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"quiz",
+						"getOneQuiz"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "7) get any quiz (by _id) to view the questions to consequently submit solution",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quizID\":\"6366c874520624c51f6c4675\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/quiz/getOneQuiz",
+							"protocol": "https",
+							"host": [
+								"maazulhaque-metaschool-quiz-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"quiz",
+								"getOneQuiz"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "675"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Nov 2022 20:51:42 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"2a3-rCFmwhVqlczAex7Qdp7F52+xZ88\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::4bls4-1667681502078-c94482bd7f33"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6366c874520624c51f6c4675\",\n    \"authorID\": \"6366c7d2520624c51f6c4670\",\n    \"authorEmail\": \"maaz.haque17@gmail.com\",\n    \"quizName\": \"Sample Quiz\",\n    \"thumbnail\": \"https://e7.pngegg.com/pngimages/860/634/png-clipart-general-knowledge-test-zazzle-gift-pink-sheep-light-brain-thumbnail.png\",\n    \"quizTopic\": \"Sample Topic\",\n    \"questionSet\": [\n        {\n            \"qType\": \"mcq\",\n            \"question\": \"What does 5 + 5 equals to?\",\n            \"choices\": [\n                \"10\",\n                \"20\",\n                \"5\",\n                \"55\"\n            ]\n        },\n        {\n            \"qType\": \"mcq\",\n            \"question\": \"What is the opposite of \\\"YES\\\"?\",\n            \"choices\": [\n                \"MAYBE\",\n                \"PERHAPS\",\n                \"NO\",\n                \"DEFINITE\"\n            ]\n        },\n        {\n            \"qType\": \"blank\",\n            \"question\": \"______ is the largest state in the USA.\",\n            \"choices\": []\n        }\n    ],\n    \"numProblems\": 3,\n    \"maxPoints\": 3,\n    \"dateCreated\": \"2022-11-05T20:26:55.642Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "8) attempt a particular quiz by submitting your answers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzY2YzdkMjUyMDYyNGM1MWY2YzQ2NzAiLCJuYW1lIjoiTWFheiBVbCBIYXF1ZSIsImVtYWlsIjoibWFhei5oYXF1ZTE3QGdtYWlsLmNvbSIsInN0YXR1cyI6InZlcmlmaWVkIiwiaWF0IjoxNjY3NjgwMzAzLCJleHAiOjE2Njc4NTMxMDN9.WNJvBhBNalCor75zbjdi_Ee3aOHLsjLszy5qOE1Hdmw\",\r\n    \"quizID\":\"6366c874520624c51f6c4675\",\r\n    \"submission\":[\r\n        {\"answer\":\"10\"},\r\n        {\"answer\":\"NO\"},\r\n        {\"answer\":\"Alaska\"}\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/attempt/submitAttempt",
+					"protocol": "https",
+					"host": [
+						"maazulhaque-metaschool-quiz-app",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"attempt",
+						"submitAttempt"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "8) attempt a particular quiz by submitting your answers - all correct answers",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzY2YzdkMjUyMDYyNGM1MWY2YzQ2NzAiLCJuYW1lIjoiTWFheiBVbCBIYXF1ZSIsImVtYWlsIjoibWFhei5oYXF1ZTE3QGdtYWlsLmNvbSIsInN0YXR1cyI6InZlcmlmaWVkIiwiaWF0IjoxNjY3NjgwMzAzLCJleHAiOjE2Njc4NTMxMDN9.WNJvBhBNalCor75zbjdi_Ee3aOHLsjLszy5qOE1Hdmw\",\r\n    \"quizID\":\"6366c874520624c51f6c4675\",\r\n    \"submission\":[\r\n        {\"answer\":\"10\"},\r\n        {\"answer\":\"NO\"},\r\n        {\"answer\":\"Alaska\"}\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/attempt/submitAttempt",
+							"protocol": "https",
+							"host": [
+								"maazulhaque-metaschool-quiz-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"attempt",
+								"submitAttempt"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "593"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Nov 2022 21:14:03 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"251-ktfJgSf9RowQT9Jtttt7A9FI/gI\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::rtq7s-1667682842770-13b9dcffa0c4"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userID\": \"6366c7d2520624c51f6c4670\",\n    \"quizID\": \"6366c874520624c51f6c4675\",\n    \"submission\": [\n        {\n            \"qType\": \"mcq\",\n            \"question\": \"What does 5 + 5 equals to?\",\n            \"choices\": [\n                \"10\",\n                \"20\",\n                \"5\",\n                \"55\"\n            ],\n            \"response\": \"10\",\n            \"isCorrect\": true\n        },\n        {\n            \"qType\": \"mcq\",\n            \"question\": \"What is the opposite of \\\"YES\\\"?\",\n            \"choices\": [\n                \"MAYBE\",\n                \"PERHAPS\",\n                \"NO\",\n                \"DEFINITE\"\n            ],\n            \"response\": \"NO\",\n            \"isCorrect\": true\n        },\n        {\n            \"qType\": \"blank\",\n            \"question\": \"______ is the largest state in the USA.\",\n            \"choices\": [],\n            \"response\": \"Alaska\",\n            \"isCorrect\": true\n        }\n    ],\n    \"score\": 3,\n    \"maxPoints\": 3,\n    \"percentage\": 1,\n    \"attemptedDate\": \"2022-11-05T21:13:37.444Z\",\n    \"_id\": \"6366d21af8297d1fa08c7a9a\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "8) attempt a particular quiz by submitting your answers - with mistake",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzY2YzdkMjUyMDYyNGM1MWY2YzQ2NzAiLCJuYW1lIjoiTWFheiBVbCBIYXF1ZSIsImVtYWlsIjoibWFhei5oYXF1ZTE3QGdtYWlsLmNvbSIsInN0YXR1cyI6InZlcmlmaWVkIiwiaWF0IjoxNjY3NjgwMzAzLCJleHAiOjE2Njc4NTMxMDN9.WNJvBhBNalCor75zbjdi_Ee3aOHLsjLszy5qOE1Hdmw\",\r\n    \"quizID\":\"6366c874520624c51f6c4675\",\r\n    \"submission\":[\r\n        {\"answer\":\"10\"},\r\n        {\"answer\":\"NO\"},\r\n        {\"answer\":\"Texas\"}\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/attempt/submitAttempt",
+							"protocol": "https",
+							"host": [
+								"maazulhaque-metaschool-quiz-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"attempt",
+								"submitAttempt"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "610"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Nov 2022 21:15:09 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"262-U2pCg25+wpOzcQ9nYs94Bx9N+kM\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::4rhdk-1667682909273-7620de27292c"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userID\": \"6366c7d2520624c51f6c4670\",\n    \"quizID\": \"6366c874520624c51f6c4675\",\n    \"submission\": [\n        {\n            \"qType\": \"mcq\",\n            \"question\": \"What does 5 + 5 equals to?\",\n            \"choices\": [\n                \"10\",\n                \"20\",\n                \"5\",\n                \"55\"\n            ],\n            \"response\": \"10\",\n            \"isCorrect\": true\n        },\n        {\n            \"qType\": \"mcq\",\n            \"question\": \"What is the opposite of \\\"YES\\\"?\",\n            \"choices\": [\n                \"MAYBE\",\n                \"PERHAPS\",\n                \"NO\",\n                \"DEFINITE\"\n            ],\n            \"response\": \"NO\",\n            \"isCorrect\": true\n        },\n        {\n            \"qType\": \"blank\",\n            \"question\": \"______ is the largest state in the USA.\",\n            \"choices\": [],\n            \"response\": \"Texas\",\n            \"isCorrect\": false\n        }\n    ],\n    \"score\": 2,\n    \"maxPoints\": 3,\n    \"percentage\": 0.6666666666666666,\n    \"attemptedDate\": \"2022-11-05T21:13:37.444Z\",\n    \"_id\": \"6366d25df8297d1fa08c7aa0\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "9) (a) get all your previous quiz attempts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzY2YzdkMjUyMDYyNGM1MWY2YzQ2NzAiLCJuYW1lIjoiTWFheiBVbCBIYXF1ZSIsImVtYWlsIjoibWFhei5oYXF1ZTE3QGdtYWlsLmNvbSIsInN0YXR1cyI6InZlcmlmaWVkIiwiaWF0IjoxNjY3NjgwMzAzLCJleHAiOjE2Njc4NTMxMDN9.WNJvBhBNalCor75zbjdi_Ee3aOHLsjLszy5qOE1Hdmw\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/attempt/findAllPrevious",
+					"protocol": "https",
+					"host": [
+						"maazulhaque-metaschool-quiz-app",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"attempt",
+						"findAllPrevious"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "9) (a) get all your previous quiz attempts",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzY2YzdkMjUyMDYyNGM1MWY2YzQ2NzAiLCJuYW1lIjoiTWFheiBVbCBIYXF1ZSIsImVtYWlsIjoibWFhei5oYXF1ZTE3QGdtYWlsLmNvbSIsInN0YXR1cyI6InZlcmlmaWVkIiwiaWF0IjoxNjY3NjgwMzAzLCJleHAiOjE2Njc4NTMxMDN9.WNJvBhBNalCor75zbjdi_Ee3aOHLsjLszy5qOE1Hdmw\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/attempt/findAllPrevious",
+							"protocol": "https",
+							"host": [
+								"maazulhaque-metaschool-quiz-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"attempt",
+								"findAllPrevious"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Nov 2022 21:28:35 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"e10-3AiWRn31N5eS4Si7f9pPFg8rK+8\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::pnfw2-1667683715598-85f28b3d6752"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6366d0a03d00ab960faea742\",\n        \"userID\": \"6366c7d2520624c51f6c4670\",\n        \"quizID\": \"6366c874520624c51f6c4675\",\n        \"submission\": [\n            {\n                \"qType\": \"mcq\",\n                \"question\": \"What does 5 + 5 equals to?\",\n                \"choices\": [\n                    \"10\",\n                    \"20\",\n                    \"5\",\n                    \"55\"\n                ],\n                \"response\": \"10\",\n                \"isCorrect\": true\n            },\n            {\n                \"qType\": \"mcq\",\n                \"question\": \"What is the opposite of \\\"YES\\\"?\",\n                \"choices\": [\n                    \"MAYBE\",\n                    \"PERHAPS\",\n                    \"NO\",\n                    \"DEFINITE\"\n                ],\n                \"response\": \"NO\",\n                \"isCorrect\": true\n            },\n            {\n                \"qType\": \"blank\",\n                \"question\": \"______ is the largest state in the USA.\",\n                \"choices\": [],\n                \"response\": \"Alaska\",\n                \"isCorrect\": true\n            }\n        ],\n        \"score\": 3,\n        \"maxPoints\": 3,\n        \"percentage\": 1,\n        \"attemptedDate\": \"2022-11-05T21:07:17.968Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6366d20ff8297d1fa08c7a93\",\n        \"userID\": \"6366c7d2520624c51f6c4670\",\n        \"quizID\": \"6366c874520624c51f6c4675\",\n        \"submission\": [\n            {\n                \"qType\": \"mcq\",\n                \"question\": \"What does 5 + 5 equals to?\",\n                \"choices\": [\n                    \"10\",\n                    \"20\",\n                    \"5\",\n                    \"55\"\n                ],\n                \"response\": \"10\",\n                \"isCorrect\": true\n            },\n            {\n                \"qType\": \"mcq\",\n                \"question\": \"What is the opposite of \\\"YES\\\"?\",\n                \"choices\": [\n                    \"MAYBE\",\n                    \"PERHAPS\",\n                    \"NO\",\n                    \"DEFINITE\"\n                ],\n                \"response\": \"NO\",\n                \"isCorrect\": true\n            },\n            {\n                \"qType\": \"blank\",\n                \"question\": \"______ is the largest state in the USA.\",\n                \"choices\": [],\n                \"response\": \"Alaska\",\n                \"isCorrect\": true\n            }\n        ],\n        \"score\": 3,\n        \"maxPoints\": 3,\n        \"percentage\": 1,\n        \"attemptedDate\": \"2022-11-05T21:13:37.444Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6366d21af8297d1fa08c7a9a\",\n        \"userID\": \"6366c7d2520624c51f6c4670\",\n        \"quizID\": \"6366c874520624c51f6c4675\",\n        \"submission\": [\n            {\n                \"qType\": \"mcq\",\n                \"question\": \"What does 5 + 5 equals to?\",\n                \"choices\": [\n                    \"10\",\n                    \"20\",\n                    \"5\",\n                    \"55\"\n                ],\n                \"response\": \"10\",\n                \"isCorrect\": true\n            },\n            {\n                \"qType\": \"mcq\",\n                \"question\": \"What is the opposite of \\\"YES\\\"?\",\n                \"choices\": [\n                    \"MAYBE\",\n                    \"PERHAPS\",\n                    \"NO\",\n                    \"DEFINITE\"\n                ],\n                \"response\": \"NO\",\n                \"isCorrect\": true\n            },\n            {\n                \"qType\": \"blank\",\n                \"question\": \"______ is the largest state in the USA.\",\n                \"choices\": [],\n                \"response\": \"Alaska\",\n                \"isCorrect\": true\n            }\n        ],\n        \"score\": 3,\n        \"maxPoints\": 3,\n        \"percentage\": 1,\n        \"attemptedDate\": \"2022-11-05T21:13:37.444Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6366d25df8297d1fa08c7aa0\",\n        \"userID\": \"6366c7d2520624c51f6c4670\",\n        \"quizID\": \"6366c874520624c51f6c4675\",\n        \"submission\": [\n            {\n                \"qType\": \"mcq\",\n                \"question\": \"What does 5 + 5 equals to?\",\n                \"choices\": [\n                    \"10\",\n                    \"20\",\n                    \"5\",\n                    \"55\"\n                ],\n                \"response\": \"10\",\n                \"isCorrect\": true\n            },\n            {\n                \"qType\": \"mcq\",\n                \"question\": \"What is the opposite of \\\"YES\\\"?\",\n                \"choices\": [\n                    \"MAYBE\",\n                    \"PERHAPS\",\n                    \"NO\",\n                    \"DEFINITE\"\n                ],\n                \"response\": \"NO\",\n                \"isCorrect\": true\n            },\n            {\n                \"qType\": \"blank\",\n                \"question\": \"______ is the largest state in the USA.\",\n                \"choices\": [],\n                \"response\": \"Texas\",\n                \"isCorrect\": false\n            }\n        ],\n        \"score\": 2,\n        \"maxPoints\": 3,\n        \"percentage\": 0.6666666666666666,\n        \"attemptedDate\": \"2022-11-05T21:13:37.444Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6366d2cdf8297d1fa08c7aa6\",\n        \"userID\": \"6366c7d2520624c51f6c4670\",\n        \"quizID\": \"6366cb7ebc40db86bd5ce3c6\",\n        \"submission\": [\n            {\n                \"qType\": \"mcq\",\n                \"question\": \"What does 5 + 5 equals to?\",\n                \"choices\": [\n                    \"10\",\n                    \"20\",\n                    \"5\",\n                    \"55\"\n                ],\n                \"response\": \"10\",\n                \"isCorrect\": true\n            },\n            {\n                \"qType\": \"mcq\",\n                \"question\": \"What is the opposite of \\\"YES\\\"?\",\n                \"choices\": [\n                    \"MAYBE\",\n                    \"PERHAPS\",\n                    \"NO\",\n                    \"DEFINITE\"\n                ],\n                \"response\": \"NO\",\n                \"isCorrect\": true\n            },\n            {\n                \"qType\": \"blank\",\n                \"question\": \"______ is the largest state in the USA.\",\n                \"choices\": [],\n                \"response\": \"Alaska\",\n                \"isCorrect\": true\n            }\n        ],\n        \"score\": 3,\n        \"maxPoints\": 3,\n        \"percentage\": 1,\n        \"attemptedDate\": \"2022-11-05T21:13:37.444Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6366d2e1f8297d1fa08c7aac\",\n        \"userID\": \"6366c7d2520624c51f6c4670\",\n        \"quizID\": \"6366cb7ebc40db86bd5ce3c6\",\n        \"submission\": [\n            {\n                \"qType\": \"mcq\",\n                \"question\": \"What does 5 + 5 equals to?\",\n                \"choices\": [\n                    \"10\",\n                    \"20\",\n                    \"5\",\n                    \"55\"\n                ],\n                \"response\": \"55\",\n                \"isCorrect\": false\n            },\n            {\n                \"qType\": \"mcq\",\n                \"question\": \"What is the opposite of \\\"YES\\\"?\",\n                \"choices\": [\n                    \"MAYBE\",\n                    \"PERHAPS\",\n                    \"NO\",\n                    \"DEFINITE\"\n                ],\n                \"response\": \"NO\",\n                \"isCorrect\": true\n            },\n            {\n                \"qType\": \"blank\",\n                \"question\": \"______ is the largest state in the USA.\",\n                \"choices\": [],\n                \"response\": \"Alaska\",\n                \"isCorrect\": true\n            }\n        ],\n        \"score\": 2,\n        \"maxPoints\": 3,\n        \"percentage\": 0.6666666666666666,\n        \"attemptedDate\": \"2022-11-05T21:13:37.444Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "9) (b) get all your previous quiz attempts by particular quiz",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzY2YzdkMjUyMDYyNGM1MWY2YzQ2NzAiLCJuYW1lIjoiTWFheiBVbCBIYXF1ZSIsImVtYWlsIjoibWFhei5oYXF1ZTE3QGdtYWlsLmNvbSIsInN0YXR1cyI6InZlcmlmaWVkIiwiaWF0IjoxNjY3NjgwMzAzLCJleHAiOjE2Njc4NTMxMDN9.WNJvBhBNalCor75zbjdi_Ee3aOHLsjLszy5qOE1Hdmw\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/attempt/findAllPrevious/quizID/6366cb7ebc40db86bd5ce3c6",
+					"protocol": "https",
+					"host": [
+						"maazulhaque-metaschool-quiz-app",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"attempt",
+						"findAllPrevious",
+						"quizID",
+						"6366cb7ebc40db86bd5ce3c6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "9) (b) get all your previous quiz attempts by particular quiz",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzY2YzdkMjUyMDYyNGM1MWY2YzQ2NzAiLCJuYW1lIjoiTWFheiBVbCBIYXF1ZSIsImVtYWlsIjoibWFhei5oYXF1ZTE3QGdtYWlsLmNvbSIsInN0YXR1cyI6InZlcmlmaWVkIiwiaWF0IjoxNjY3NjgwMzAzLCJleHAiOjE2Njc4NTMxMDN9.WNJvBhBNalCor75zbjdi_Ee3aOHLsjLszy5qOE1Hdmw\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maazulhaque-metaschool-quiz-app.vercel.app/api/attempt/findAllPrevious/quizID/6366cb7ebc40db86bd5ce3c6",
+							"protocol": "https",
+							"host": [
+								"maazulhaque-metaschool-quiz-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"attempt",
+								"findAllPrevious",
+								"quizID",
+								"6366cb7ebc40db86bd5ce3c6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Nov 2022 21:26:53 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"4b7-/eTZCX32Oiaq4EoPdXjqFdp3Yt0\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "iad1::iad1::f48f6-1667683613362-63dda4f07492"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6366d2cdf8297d1fa08c7aa6\",\n        \"userID\": \"6366c7d2520624c51f6c4670\",\n        \"quizID\": \"6366cb7ebc40db86bd5ce3c6\",\n        \"submission\": [\n            {\n                \"qType\": \"mcq\",\n                \"question\": \"What does 5 + 5 equals to?\",\n                \"choices\": [\n                    \"10\",\n                    \"20\",\n                    \"5\",\n                    \"55\"\n                ],\n                \"response\": \"10\",\n                \"isCorrect\": true\n            },\n            {\n                \"qType\": \"mcq\",\n                \"question\": \"What is the opposite of \\\"YES\\\"?\",\n                \"choices\": [\n                    \"MAYBE\",\n                    \"PERHAPS\",\n                    \"NO\",\n                    \"DEFINITE\"\n                ],\n                \"response\": \"NO\",\n                \"isCorrect\": true\n            },\n            {\n                \"qType\": \"blank\",\n                \"question\": \"______ is the largest state in the USA.\",\n                \"choices\": [],\n                \"response\": \"Alaska\",\n                \"isCorrect\": true\n            }\n        ],\n        \"score\": 3,\n        \"maxPoints\": 3,\n        \"percentage\": 1,\n        \"attemptedDate\": \"2022-11-05T21:13:37.444Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6366d2e1f8297d1fa08c7aac\",\n        \"userID\": \"6366c7d2520624c51f6c4670\",\n        \"quizID\": \"6366cb7ebc40db86bd5ce3c6\",\n        \"submission\": [\n            {\n                \"qType\": \"mcq\",\n                \"question\": \"What does 5 + 5 equals to?\",\n                \"choices\": [\n                    \"10\",\n                    \"20\",\n                    \"5\",\n                    \"55\"\n                ],\n                \"response\": \"55\",\n                \"isCorrect\": false\n            },\n            {\n                \"qType\": \"mcq\",\n                \"question\": \"What is the opposite of \\\"YES\\\"?\",\n                \"choices\": [\n                    \"MAYBE\",\n                    \"PERHAPS\",\n                    \"NO\",\n                    \"DEFINITE\"\n                ],\n                \"response\": \"NO\",\n                \"isCorrect\": true\n            },\n            {\n                \"qType\": \"blank\",\n                \"question\": \"______ is the largest state in the USA.\",\n                \"choices\": [],\n                \"response\": \"Alaska\",\n                \"isCorrect\": true\n            }\n        ],\n        \"score\": 2,\n        \"maxPoints\": 3,\n        \"percentage\": 0.6666666666666666,\n        \"attemptedDate\": \"2022-11-05T21:13:37.444Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		}
+	]
+}
