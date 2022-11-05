@@ -21,7 +21,7 @@ function gradeSubmission(data, callback){
             temp.response = String(submission[index].answer)
             temp.isCorrect = false
 
-            if(temp.response == String(answerSet[index].answer)){
+            if(temp.response.toLowerCase() == String(answerSet[index].answer).toLowerCase()){
                 temp.isCorrect = true,
                 score = score + 1
             }
