@@ -21,6 +21,8 @@ function submitQuiz(req, res){
                     else {
                         graded.quizID = req.body.quizID
                         graded.userID = decoded._id
+                        graded.maxPoints = quiz.maxPoints
+                        graded.percentage = graded.score/graded.maxPoints
 
                         let newSubmission = new attemptModel(graded)
                         newSubmission.save()

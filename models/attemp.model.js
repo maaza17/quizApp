@@ -24,6 +24,14 @@ const attemptSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
+    maxPoints: {
+        type: Number,
+        required: true
+    },
+    percentage: {
+        type: Number,
+        required: true
+    },
     attemptedDate: {
         type: Date,
         required: true,
