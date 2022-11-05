@@ -84,19 +84,43 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "133"
+							"value": "467"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
 						},
 						{
 							"key": "Content-Type",
 							"value": "application/json; charset=utf-8"
 						},
 						{
+							"key": "Cross-Origin-Embedder-Policy",
+							"value": "require-corp"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
 							"key": "Date",
-							"value": "Sat, 05 Nov 2022 20:29:33 GMT"
+							"value": "Sat, 05 Nov 2022 21:53:20 GMT"
 						},
 						{
 							"key": "Etag",
-							"value": "W/\"85-FSEvuy8j/zTQ7C6aOZtNLGryOlE\""
+							"value": "W/\"1d3-kPBshJAiPfRudKYaBzQS1Ugi6LI\""
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
 						},
 						{
 							"key": "Server",
@@ -104,11 +128,27 @@
 						},
 						{
 							"key": "Strict-Transport-Security",
-							"value": "max-age=63072000; includeSubDomains; preload"
+							"value": "max-age=15552000; includeSubDomains"
 						},
 						{
-							"key": "X-Powered-By",
-							"value": "Express"
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Dns-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
 						},
 						{
 							"key": "X-Vercel-Cache",
@@ -116,11 +156,15 @@
 						},
 						{
 							"key": "X-Vercel-Id",
-							"value": "iad1::iad1::7lbhj-1667680173919-6ebe3d5711b8"
+							"value": "iad1::iad1::nt8cb-1667685200634-d707b5e8f2ba"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "0"
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"author\": \"Maaz Ul Haque\",\n    \"message\": \"This is a demo application for metaschool.so\",\n    \"repository\": \"https://github.com/maaza17/quizApp\"\n}"
+					"body": "{\n    \"author\": \"Maaz Ul Haque\",\n    \"description\": \"This is a demo application for metaschool.so\",\n    \"repository\": \"https://github.com/maaza17/quizApp\",\n    \"note\": \"Please download the postman collection hosted in the same repository & import into your postman client to interact with already formatted APIs. POST data is sent in the body in json format.\",\n    \"linkToPostmanCollection\": \"https://github.com/maaza17/quizApp/blob/main/maazulhaque-quiz-app-postman-APIs.postman_collection.json\"\n}"
 				}
 			]
 		},
