@@ -1,5 +1,7 @@
 const quizModel = require('../models/quiz.model')
+const userModel = require('../models/user.model')
 const miscHelper = require('../helpers/misc.helper')
+const emailHelper = require('../helpers/email.helper')
 const jwt = require('jsonwebtoken')
 const isEmpty = require('is-empty')
 
@@ -18,7 +20,16 @@ function createQuiz(req, res) {
 
             newQuiz.save()
             .then(saveDoc => {
-                return res.status(201).json({message: 'Quiz created successfully.'})
+                userModel.find({}, {email: true, name: true, _id: false})
+                .then(users =>{
+                    emailHelper.newQuizAlert({mailList: users, quizName: saveDoc.quizName, quizTopic: saveDoc.quizTopic}, (mailErr, mailInfo) => {
+                        if(mailErr){
+                            return res.status(201).json({message: 'Quiz created successfully. Email alert not sent.'})
+                        } else {
+                            return res.status(201).json({message: 'Quiz created successfully.'})
+                        }
+                    })
+                })                
             })
             .catch(saveErr => {
                 return res.status(500).json({UnexpectedError: 'An unexpected error occured. Please try again later.'})

@@ -38,6 +38,35 @@ function submitQuiz(req, res){
     })
 }
 
+function getAllPreviousAttempts(req, res){
+    miscHelper.verifyToken(req.body.token, (err, decoded) => {
+        if(err) return res.status(400).json(err)
+        else {
+            attemptModel.find({userID: decoded._id})
+            .then(attempts => {
+                if(isEmpty(attempts)) return res.status(404).json({NoAttemptsFound: 'User has not yet attempted any quizzes.'})
+                else return res.status(200).json(attempts)
+            })
+        }
+    })
+}
+
+function getPreviousAttemptsByQuiz(req, res){
+    miscHelper.verifyToken(req.body.token, (err, decoded) => {
+        if(err) return res.status(400).json(err)
+        else if(isEmpty(req.params.quizID)) return res.status(400).json({ParameterMissingError: 'Quiz ID not provided.'})
+        else {
+            attemptModel.find({userID: decoded._id, quizID: req.params.quizID})
+            .then(attempts => {
+                if(isEmpty(attempts)) return res.status(404).json({NoAttemptsFound: 'User has not yet attempted any quizzes.'})
+                else return res.status(200).json(attempts)
+            })
+        }
+    })
+}
+
 module.exports = {
-    submitQuiz: submitQuiz
+    submitQuiz: submitQuiz,
+    getAllPreviousAttempts: getAllPreviousAttempts,
+    getPreviousAttemptsByQuiz: getPreviousAttemptsByQuiz
 }

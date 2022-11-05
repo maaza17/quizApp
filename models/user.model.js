@@ -10,9 +10,9 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    fullname:{
+    name:{
         type: String,
-        required: true,
+        required: true
     },
     confirmationCode:{
         type: String,
@@ -21,8 +21,8 @@ const userSchema = new mongoose.Schema({
     },
     status: {
         type: String,
-        enum: ['registered', 'verified'],
-        default: 'verified'
+        enum: ['unverified', 'verified'],
+        default: 'unverified'
     },
     dateCreated: {
         type: Date,

@@ -41,13 +41,13 @@ function validateRegisterInput(data){
     let errors = {};
   
     // Convert empty fields to an empty string so we can use validator functions
-    data.fullname = !isEmpty(data.fullname) ? data.fullname : ""
+    data.name = !isEmpty(data.name) ? data.name : ""
     data.email = !isEmpty(data.email) ? data.email : ""
     data.password = !isEmpty(data.password) ? data.password : ""
     
-    // fullname checks
-    if (validator.isEmpty(data.fullname)) {
-        errors.FullnameRequired = "Fullname is required"
+    // name checks
+    if (validator.isEmpty(data.name)) {
+        errors.NameRequired = "Full Name is required"
     }
     
     // Email checks
